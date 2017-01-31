@@ -10,6 +10,13 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var power: UILabel!
+    @IBOutlet weak var vol: UILabel!
+    @IBOutlet weak var chan: UILabel!
+    
+    @IBAction func powerOn(_ sender: UISwitch) {
+        power.text = (sender.isOn ? "On" : "Off")
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
