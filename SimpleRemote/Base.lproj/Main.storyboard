@@ -44,7 +44,7 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Off" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WYY-WC-Uy6">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Off" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="WYY-WC-Uy6">
                                         <rect key="frame" x="282" y="99" width="61" height="21"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="WYY-WC-Uy6" secondAttribute="height" multiplier="61:21" id="vYB-O2-fo0"/>
@@ -246,6 +246,9 @@
                                     <segment title="789"/>
                                     <segment title="NETFLIX"/>
                                 </segments>
+                                <connections>
+                                    <action selector="favChan:" destination="BYZ-38-t0r" eventType="valueChanged" id="NKy-FP-hhn"/>
+                                </connections>
                             </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

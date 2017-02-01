@@ -60,6 +60,14 @@ class ViewController: UIViewController {
         }
     }
     
+    @IBAction func favChan(_ sender: UISegmentedControl) {
+        if power.text == "On" {
+            if let fav: String = sender.titleForSegment(
+                at: sender.selectedSegmentIndex) {
+                chan.text = fav
+            }
+        }
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
