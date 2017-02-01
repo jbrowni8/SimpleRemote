@@ -17,6 +17,13 @@ class ViewController: UIViewController {
     @IBAction func powerOn(_ sender: UISwitch) {
         power.text = (sender.isOn ? "On" : "Off")
     }
+    
+    @IBAction func deltaVol(_ sender: UISlider) {
+        if power.text=="On" {
+            vol.text = "\(Int(sender.value))"
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.

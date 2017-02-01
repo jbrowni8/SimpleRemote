@@ -125,8 +125,11 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="hYP-my-dow">
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="hYP-my-dow">
                                 <rect key="frame" x="123" y="220" width="212" height="31"/>
+                                <connections>
+                                    <action selector="deltaVol:" destination="BYZ-38-t0r" eventType="valueChanged" id="QNW-0k-6QK"/>
+                                </connections>
                             </slider>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hNF-8r-eic">
                                 <rect key="frame" x="125" y="260" width="46" height="30"/>
