@@ -14,6 +14,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var vol: UILabel!
     @IBOutlet weak var chan: UILabel!
     @IBOutlet weak var slider: UISlider!
+    @IBOutlet weak var segmentControl: UISegmentedControl!
     
     var digits : String = ""
     var counter = 0
@@ -25,9 +26,11 @@ class ViewController: UIViewController {
         if power.text=="On" {
             enabled = true
             slider.isEnabled = enabled
+            segmentControl.isEnabled = enabled
             chan.text = "\(000)"
         } else {
             slider.isEnabled = enabled
+            segmentControl.isEnabled = enabled
             vol.text = "\(0)"
             chan.text = "Off"
         }
