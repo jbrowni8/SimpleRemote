@@ -13,18 +13,26 @@ class ViewController: UIViewController {
     @IBOutlet weak var power: UILabel!
     @IBOutlet weak var vol: UILabel!
     @IBOutlet weak var chan: UILabel!
+    @IBOutlet weak var slider: UISlider!
+    
     var digits : String = ""
     var counter = 0
     
+
     @IBAction func powerOn(_ sender: UISwitch) {
         power.text = (sender.isOn ? "On" : "Off")
+        var enabled : Bool = false
         if power.text=="On" {
+            enabled = true
+            slider.isEnabled = enabled
             chan.text = "\(000)"
         } else {
+            slider.isEnabled = enabled
             vol.text = "\(0)"
             chan.text = "Off"
         }
     }
+    
     
     @IBAction func deltaVol(_ sender: UISlider) {
         if power.text=="On" {
